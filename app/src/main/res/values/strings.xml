@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SGK</string>
+    <string name="title_activity_meun">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_about_me">Me</string>
+    <string name="q2m_about">QQ查手机</string>
+    <string name="m2q_about">手机查QQ</string>
+    <string name="s2m_about">微博uid查手机</string>
+    <string name="m2s_about">手机查微博uid</string>
+    <string name="q2pswd_about">QQ查老密，数据库很老，基本没什么用</string>
+    <string name="q2l_about">QQ查LOL，这个接口有问题</string>
+    <string name="l2q_about">LOL查QQ</string>
+    <string name="chaqq_about">查QQ，老密不一定是明文</string>
+    <string name="chaphone_about">查手机，老密不一定是明文</string>
+    <string name="chalol_about">查LOL，记得看荣誉截图</string>
+</resources>

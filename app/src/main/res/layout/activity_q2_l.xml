@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Q2M">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        >
+
+        <EditText
+            android:id="@+id/q2l_code_input"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:hint=" 请输入QQ号"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:background="@drawable/edit_text_bg"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:text="查询"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:onClick="inquireQ2L"
+            tools:ignore="OnClick" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/q2l_about"
+            android:textSize="25sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/q2l_msg_output"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:hint="查询结果"
+            android:textSize="25sp"
+            android:inputType="textMultiLine"
+            android:background="@drawable/edit_text_bg"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:text="复制"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:onClick="copyMsg"
+        />
+</LinearLayout>

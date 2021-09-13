@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GetSecIDActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical"
+        >
+    <EditText
+        android:id="@+id/get_sec_id_input"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="请输入申请验证码"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="5dp"
+        android:inputType="text"
+        android:background="@drawable/edit_text_bg"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical"
+        >
+        <EditText
+            android:id="@+id/get_sec_id_output"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="你的SecID"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="5dp"
+            android:inputType="text"
+            android:background="@drawable/edit_text_bg"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_get_new_secid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edit_text_bg"
+        android:text="申请SecID"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:onClick="getNewSecID"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple_200"
+        android:text="返回登陆"
+        android:textSize="25sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:onClick="toMainActivity"
+        />
+
+
+</LinearLayout>
